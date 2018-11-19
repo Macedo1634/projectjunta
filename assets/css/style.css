@@ -501,7 +501,7 @@ p a {
 }
 
 .secondary-background {
-  background-color: #3367D6;
+  background-color: #0649b2;
 }
 
 .dark-background {
@@ -3743,7 +3743,7 @@ header nav.navbar.white #search-box .form-input :-ms-input-placeholder {
 }
 
 #page-content #news .single-news article span.date {
-  color: #444444;
+  color: #0649b2;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -7549,4 +7549,13 @@ button.mfp-close:hover {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+
+.footer-title{
+  font-weight: bold;
+}
+
+.post-content{
+  padding-top: 30px;
 }

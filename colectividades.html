@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Bussible HTML Template</title>
+        <title>Junta de Freguesia de Pardilhó</title>
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
@@ -170,12 +170,12 @@
                                         <aside class="page-sidebar text padding-md-bottom-null">
                                             <div class="widget-wrapper">
                                                 
-                                                <ul class="widget-box">
-                                                    <li><button class="tablinks" onclick="openCity(event, 'acrsaavedra')">A.C.R.Saavedra Guedes</button></li>
-                                                    <li><button class="tablinks" onclick="openCity(event, 'pardilhos')">A Par D'Ilhós</button></li>
-                                                    <li><button class="tablinks" onclick="openCity(event, 'clubpardilhoense')">Club Pardilhoense</button></li>
-                                                    <li><button class="tablinks" onclick="openCity(event, 'ventosdaria')">Ventos da Ria</button></li>
-                                                    <li><button class="tablinks" onclick="openCity(event, 'dancasdaaldeia')">Grupo Etnográfico Danças d'Aldeia</button></li>
+                                                <ul class="widget-box tab">
+                                                    <li><button class="tablinks active" onclick="openGroup(event, 'acrsaavedra')">A.C.R.Saavedra Guedes</button></li>
+                                                    <li><button class="tablinks" onclick="openGroup(event, 'pardilhos')">A Par D'Ilhós</button></li>
+                                                    <li><button class="tablinks" onclick="openGroup(event, 'clubpardilhoense')">Club Pardilhoense</button></li>
+                                                    <li><button class="tablinks" onclick="openGroup(event, 'ventosdaria')">Ventos da Ria</button></li>
+                                                    <li><button class="tablinks" onclick="openGroup(event, 'dancasdaaldeia')">Grupo Etnográfico Danças d'Aldeia</button></li>
                                                 </ul>
                                             </div>
                                             
@@ -185,7 +185,7 @@
                             </div>
                             <!--  END Sidebar  -->
                             <!--  Page Content - ACR SAAVEDRA GUEDES  -->
-                            <div id="acrsaavedra" class="tabcontent">
+                            <div id="acrsaavedra" class="tabcontent" style="display:block;">
                             <div class="col-md-7 padding-leftright-null">
                                 <!-- Section About -->
                                 <div class="row no-margin padding-onlytop-lg padding-onlybottom-md padding-md-top">
@@ -492,19 +492,7 @@
         <script src="assets/js/main.js"></script>
 
         <script>
-function openCity(evt, grupo) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(grupo).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+
 </script>
     </body>
 </html>

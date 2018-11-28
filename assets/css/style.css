@@ -7587,3 +7587,20 @@ button.mfp-close:hover {
 .video-section{
   padding: 0px !important;
 }
+
+.subtitulo{
+  color: #0649b2;
+  margin-bottom: 20px;
+}
+
+.lista{
+  color: #757575;
+  list-style: disc;
+}
+
+.lista li{
+  color: #757575;
+  list-style: disc;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}

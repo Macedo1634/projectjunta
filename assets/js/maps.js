@@ -7,7 +7,7 @@ var $ = jQuery.noConflict();
     /* =  Contact Map
     /*-------------------------------------------------*/
 
-    var contact = {"lat":"41.9099856", "lon":"12.3955719"}; //Change a map coordinate here!
+    var contact = {"lat":"40.800746", "lon":"-8.626526"}; //Change a map coordinate here!
 
         var map;
         var MY_MAPTYPE_ID = 'custom_style';
@@ -183,7 +183,7 @@ var $ = jQuery.noConflict();
                     "elementType": "geometry",
                     "stylers": [
                         {
-                            "color": "#3367D6"
+                            "color": "#0649B2"
                         },
                         {
                             "lightness": 17
@@ -218,7 +218,7 @@ var $ = jQuery.noConflict();
                     path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
                     scale: 10,
                     strokeWeight:8,
-                    strokeColor:"#3367D6"
+                    strokeColor:"#0649B2"
                 },
             });
         }

@@ -1046,7 +1046,7 @@ textarea {
 
 /* class color: set font with secondary color */
 [class~="color"] {
-  color: #3367D6 !important;
+  color: #ffffff !important;
 }
 
 /* class black: set font with black color */
@@ -7567,7 +7567,7 @@ button.mfp-close:hover {
 
 
 .counterColor{
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Create an active/current tablink class */

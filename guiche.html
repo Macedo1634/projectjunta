@@ -264,14 +264,56 @@
                                                         <input class="form-field" name="mail" id="mail" type="text">
                                                     </div>
                                                     <div class="col-md-12 padding-leftright-null">
-                                                        <label for="name">Número Cartão Cidadão/Bilhete de Identidade<sup>*</sup></label>
-                                                        <input class="form-field" name="name" id="name" type="text" placeholder="Your Name">
+                                                        <label for="telefone">Telefone</label>
+                                                        <input class="form-field" name="telefone" id="telefone" type="text" placeholder="" maxlength="9">
+                                                    </div>
+                                                    <div class="col-md-12 padding-leftright-null">
+                                                        <label for="cartaoCidadao">Número Cartão Cidadão/Bilhete de Identidade<sup>*</sup></label>
+                                                        <input class="form-field" name="cartaoCidadao" id="cartaoCidadao" type="text" placeholder="Exemplo: 12345678 0 ZZ4">
+                                                    </div>
+                                                    <div class="col-md-12 padding-leftright-null">
+                                                        <label for="dataValidade">Data de Validade<sup>*</sup></label>
+                                                        <input class="form-field" name="dataValidade" id="dataValidade" type="date" placeholder="">
+                                                    </div>
+                                                    <div class="col-md-12 padding-leftright-null">
+                                                        <label for="dataNascimento">Data de Nascimento<sup>*</sup></label>
+                                                        <input class="form-field" name="dataNascimento" id="dataNascimento" type="date" placeholder="">
+                                                    </div>
+                                                    <div class="col-md-12 padding-leftright-null">
+                                                        <label for="estadoCivil">Estado Civil<sup>*</sup></label>
+                                                        <input class="form-field" name="estadoCivil" id="estadoCivil" type="text" placeholder="">
+                                                    </div>
+                                                    <div class="col-md-12 padding-leftright-null">
+                                                        <label for="profissao">Profissão<sup>*</sup></label>
+                                                        <input class="form-field" name="profissao" id="profissao" type="text" placeholder="">
+                                                    </div>
+                                                    <div class="col-md-12 padding-leftright-null">
+                                                        <label for="morada">Morada Completa<sup>*</sup></label>
+                                                        <input class="form-field" name="morada" id="morada" type="text" placeholder="">
+                                                    </div>
+                                                    <div class="col-md-12 padding-leftright-null">
+                                                        <label for="motivo">Motivo de Contacto<sup>*</sup></label>
+                                                        <select class="form-field" name="motivo" id="motivo" type="text" placeholder="">
+                                                          <option disabled selected value> -- selecione uma opção -- </option>
+                                                          <option value="pedidoDeclaracao">Pedido de declaração</option>
+                                                          <option value="pedidoInformacao">Pedido de informação</option>
+                                                          <option value="licencasTaxas">Licenças e taxas</option>
+                                                          <option value="reclamacao">Reclamação</option>
+                                                          <option value="outro">Outro</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="row no-margin">
                                                     <div class="col-md-12 padding-leftright-null">
-                                                        <label for="messageForm">Message<sup>*</sup></label>
-                                                        <textarea class="form-field" name="messageForm" id="messageForm" rows="6" placeholder="Your Message"></textarea>
+                                                        <label for="messageForm">Descrição do motivo de Contacto<sup>*</sup></label>
+                                                        <textarea class="form-field" name="messageForm" id="messageForm" rows="6" placeholder=""></textarea>
+                                                        <div class="col-md-12 padding-leftright-null">
+                                                            <input type="file" name="fileToUpload" id="fileToUpload">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row no-margin">
+                                                    <div class="col-md-12 padding-leftright-null">
                                                         <div class="submit-area padding-onlytop-sm">
                                                             <input type="submit" id="submit-contact" class="btn-alt active shadow" value="Send Message">
                                                             <div id="msg" class="message"></div>

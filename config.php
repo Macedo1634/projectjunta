@@ -27,3 +27,7 @@ if ( !defined('DBAPI') )
 /** caminho do arquivo de banco de dados **/
 if ( !defined('DBAPI2') )
     define('DBAPI2', ABSPATH . 'noticias/database-noticia.php');
+
+/** caminho do arquivo de banco de dados **/
+if ( !defined('DBAPI3') )
+    define('DBAPI3', ABSPATH . 'atas/database-ata.php');

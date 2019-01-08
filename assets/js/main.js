@@ -448,3 +448,13 @@ function openGroup(evt, grupo) {
     document.getElementById(grupo).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementsByClassName("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementsByClassName("main").style.marginLeft= "0";
+}

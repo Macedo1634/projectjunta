@@ -77,6 +77,11 @@ header("location:../login.php");
       <label for="ficheiro">Ficheiro PDF (10MB Max)</label>
       <input class="form-control" type="file" id="ficheiro" name="ficheiro" accept="application/pdf" required>
     </div>
+  <div class="form-group col-md-3">
+      <label for="ficheiro">Tipo</label>
+      <input type="radio" name="ata['tipo']" value="relatorio"> Relatório<br>
+      <input type="radio" name="ata['tipo']" value="ata"> Ata<br>
+    </div>
     <div class="form-group col-md-3">
       <label for="data">Data da ata</label>
       <input type="date" class="form-control" name="ata['data']">

@@ -36,6 +36,11 @@ header("location:../login.php");
       <input class="form-control" type="file" id="ficheiro" name="ficheiro" accept="application/pdf" required>
       <br>
     </div>
+    <div class="form-group col-md-3">
+      <label for="ficheiro">Tipo</label>
+      <input type="radio" name="ata['tipo']" value="relatorio"> Relatório<br>
+      <input type="radio" name="ata['tipo']" value="ata"> Ata<br>
+    </div>
     <br>
 
     <div class="form-group col-md-3">

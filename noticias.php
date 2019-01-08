@@ -189,13 +189,13 @@
 
                                 <div class="single-news one-item"> 
                                     <article>
-                                        <img src="noticias/noticias-img/<?php echo $row['imagem']; ?>" alt="">
+                                        <img src="noticias/noticias-img/<?php echo $row['imagem']; ?>" alt="" style="border-bottom: 4px solid #3367D6;">
                                         <div class="content">
                                             <h3><?php echo $row['titulo']; ?></h3>
-                                            <p><?php echo $row['texto']; ?></p>
+                                            <p><?php echo substr($row['texto'], 0, 150);?>... <a href="noticia.php?id=<?php echo $row['id']; ?>">Ler mais</a></p>
                                             <span class="date"><?php echo $row['data']; ?></span>
                                         </div>
-                                        <a href="noticia.php?id=<?php echo $row['id']; ?>" class="link"></a>
+                                        
 
                                     </article>
                                 </div>

@@ -77,12 +77,7 @@ function getCalender($year = '',$month = '')
 						echo $dayCount;
 						echo '</span>';
 						
-						//Hover event popup
-						echo '<div id="date_popup_'.$currentDate.'" class="date_popup_wrap none">';
-						echo '<div class="date_window">';
-						echo '<div class="popup_event">Events ('.$eventNum.')</div>';
-						echo ($eventNum > 0)?'<a href="javascript:;" onclick="getEvents(\''.$currentDate.'\');">view events</a>':'';
-						echo '</div></div>';
+						
 						
 						echo '</li></a>';
 

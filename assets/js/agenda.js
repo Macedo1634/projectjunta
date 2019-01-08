@@ -1,7 +1,7 @@
 (function($) {
 "use strict";
 var options = {
-events_source: 'event.php',
+events_source: '../../php/eventos.php',
 view: 'month',
 tmpl_path: 'tmpls/',
 tmpl_cache: false,

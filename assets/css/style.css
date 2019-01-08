@@ -3720,6 +3720,7 @@ header nav.navbar.white #search-box .form-input :-ms-input-placeholder {
   background-color: white;
   border-radius: 2px;
   transition: all .4s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.06), 0 3px 6px rgba(0,0,0,0.13);
 }
 
 #page-content #news .single-news article img {

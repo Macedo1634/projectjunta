@@ -1,59 +1,99 @@
 <?php 
 session_start();
-	include_once 'class_user.php';
-	$usern = new User();
+  include_once 'class_user.php';
+  $usern = new User();
 
-	if (isset($_REQUEST['submit'])) {
-		extract($_REQUEST);
-	    $login = $usern->check_login($user, $pass);
-	    if ($login) {
-	        $_SESSION['login'] = true;
-	        // Registration Success
-	       header("location:admin.php");
-	    } else {
-	        // Registration Failed
-	        echo 'Wrong username or password';
-	    }
-	}
-	
+  if (isset($_REQUEST['submit'])) {
+    extract($_REQUEST);
+      $login = $usern->check_login($user, $pass);
+      if ($login) {
+          $_SESSION['login'] = true;
+          // Registration Success
+         header("location:admin.php");
+      } else {
+          // Registration Failed
+          echo 'Wrong username or password';
+      }
+  }
+  
 ?>
 
-
-
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-  </head>
- 
-
-  <body id="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login V18</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
   
-
-            
-         
-        <div class="container">  
-        <form class="form-signin">            
-               <label class="form-label" for="user">User</label>
-               <input id="user" type="text" class="form-control" name="user" placeholder="" required/>
-              
-               <label id="label-pass" class="form-label" for="pass">Pass</label>
-               <input id="pass" type="password" class="form-control" name="pass" placeholder="" required/> 
-               
-               <button class="btn btn-primary" type="submit" name="submit" id="signin" onclick="return(submitlogin());">Sign in</button>
-
-
-            </form>
-            
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form class="login100-form validate-form">
+          <span class="login100-form-title p-b-43">
+            Login 
+          </span>
+          
+          
+          <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" id="user" name="user">
+            <span class="focus-input100"></span>
+            <span class="label-input100">Username</span>
           </div>
-            
+          
+          
+          <div class="wrap-input100 validate-input" data-validate="Password is required">
+            <input class="input100" type="password" id="pass" name="pass">
+            <span class="focus-input100"></span>
+            <span class="label-input100">Password</span>
+          </div>
+
+          <div class="flex-sb-m w-full p-t-3 p-b-32">
+            <div class="contact100-form-checkbox">
+              <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+              <label class="label-checkbox100" for="ckb1">
+                Lembra-me
+              </label>
+            </div>
+
+          </div>
       
 
-       
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" type="submit" name="submit" id="signin" onclick="return(submitlogin());">
+              Entrar
+            </button>
+          </div>
 
+        </form>
 
-    <script>
+        <div class="login100-more" style="background-image: url('assets/img/mlcpardilho.jpg');">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
       function submitlogin() {
         var form = document.login;
         if (form.user.value == "") {
@@ -66,7 +106,26 @@ session_start();
       }
       
     </script>
+  
 
+  
+  
+<!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+  <script src="assets/js/login.js"></script>
 
-  </body>
-  </html>
+</body>
+</html>

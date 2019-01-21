@@ -21,9 +21,13 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login V18</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="assets/img/BrasaoPardilho_favIcon.png" type="image/png">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Junta de Freguesia de Pardilhó</title>
 <!--===============================================================================================-->  
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -50,7 +54,7 @@ session_start();
       <div class="wrap-login100">
         <form class="login100-form validate-form">
           <span class="login100-form-title p-b-43">
-            Login 
+            Área administrativa 
           </span>
           
           

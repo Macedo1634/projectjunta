@@ -34,7 +34,7 @@ $usern->user_logout();
         <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-theme.min.css">
 
         <!-- Custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/admin.css">
         
         <!-- Font Awesome -->
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -59,12 +59,29 @@ $usern->user_logout();
     </head>
 
   <body>
-  
-  <h2><a href="noticias/admin-noticia.php">Noticias</a></h2>
-  <h2><a href="agenda/admin-agenda.php">Agenda</a></h2>
-  <h2><a href="atas/admin-atas.php">Atas</a></h2>
-  <a href="admin.php?q=logout">Logout <span class="glyphicon glyphicon-log-out"></span></a>
 
+<main class="main">
+  <aside class="sidebar">
+    <nav class="nav">
+      <ul>
+        <li class="active"><a href="noticias/admin.php">Admin</a></li>
+        <li><a href="noticias/admin-noticia.php">Noticias</a></li>
+        <li><a href="agenda/admin-agenda.php">Agenda</a></li>
+        <li><a href="atas/admin-ata.php">Atas</a></li>
+        <li><a href="admin.php?q=logout">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="twitter">
+    <div class="container">
+      <a href="#">
+        <img src="assets/img/BrasaoPardilho.png" class="normal" alt="logo">
+      </a>
+      <p>Bem vindo</p>
+    </div>
+  </section>
+</main>
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="assets/js/jquery.min.js"></script>
